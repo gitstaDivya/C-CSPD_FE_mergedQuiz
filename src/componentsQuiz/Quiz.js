@@ -1,13 +1,27 @@
 import { useState, useContext } from "react";
-import { Questions } from "../helperQuiz/Questions";
 import { GameStateContext } from "../helperQuiz/Contexts";
+import { Questions as defaultQuestions } from "../helperQuiz/Questions";
+import { CSQuestions } from "../helperQuiz/CSQuestions";
+import { PDQuestions } from "../helperQuiz/PDQuestions";
+import { SSQuestions } from "../helperQuiz/SSQuestions";
 import "../QApp.css";
 
-function Quiz() {
+function Quiz({ selectedTopic }) {
     const [currentQuestion, setCurrentQuestion] = useState(0);
     const [optionChosen, setOptionChosen] = useState("");
 
-    const {score, setScore, gameState, setGameState } = useContext(GameStateContext);
+    const { score, setScore, gameState, setGameState } = useContext(
+        GameStateContext
+    );
+
+    let Questions = defaultQuestions;
+    if (selectedTopic === "cs") {
+        Questions = CSQuestions;
+    } else if (selectedTopic === "pd") {
+        Questions = PDQuestions;
+    } else if (selectedTopic === "ss") {
+        Questions = SSQuestions;
+    }
 
     const chooseOption = (option) => {
         setOptionChosen(option);
@@ -40,11 +54,15 @@ function Quiz() {
                 <h2>
                     {currentQuestion + 1} / {Questions.length}
                 </h2>
-                <h2 className="questionsAhead">{Questions[currentQuestion].prompt}</h2>
+                <h2 className="questionsAhead">
+                    {Questions[currentQuestion].prompt}
+                </h2>
             </div>
             <div className="questions">
                 <button
-                    className={`qbutton ${optionChosen === "optionA" ? "selected" : ""}`}
+                    className={`qbutton ${
+                        optionChosen === "optionA" ? "selected" : ""
+                    }`}
                     onClick={() => {
                         chooseOption("optionA");
                     }}
@@ -52,7 +70,9 @@ function Quiz() {
                     {Questions[currentQuestion].optionA}
                 </button>
                 <button
-                    className={`qbutton ${optionChosen === "optionB" ? "selected" : ""}`}
+                    className={`qbutton ${
+                        optionChosen === "optionB" ? "selected" : ""
+                    }`}
                     onClick={() => {
                         chooseOption("optionB");
                     }}
@@ -60,7 +80,9 @@ function Quiz() {
                     {Questions[currentQuestion].optionB}
                 </button>
                 <button
-                    className={`qbutton ${optionChosen === "optionC" ? "selected" : ""}`}
+                    className={`qbutton ${
+                        optionChosen === "optionC" ? "selected" : ""
+                    }`}
                     onClick={() => {
                         chooseOption("optionC");
                     }}
@@ -68,7 +90,9 @@ function Quiz() {
                     {Questions[currentQuestion].optionC}
                 </button>
                 <button
-                    className={`qbutton ${optionChosen === "optionD" ? "selected" : ""}`}
+                    className={`qbutton ${
+                        optionChosen === "optionD" ? "selected" : ""
+                    }`}
                     onClick={() => {
                         chooseOption("optionD");
                     }}

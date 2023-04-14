@@ -2,9 +2,6 @@ import "../QApp.css";
 import { useContext, useState } from "react";
 import { GameStateContext } from "../helperQuiz/Contexts";
 import Quiz from "./Quiz";
-import PDQuiz from "../compPDquiz/PDQuiz";
-import CSQuiz from "../compCSquiz/CSQuiz";
-import SSQuiz from "../compSSquiz/SSQuiz";
 
 function Menu() {
     const { gameState, setGameState, userName, setUserName } = useContext(
@@ -13,20 +10,12 @@ function Menu() {
 
     const [selectedTopic, setSelectedTopic] = useState("");
 
-    const handleStartQuiz = () => {
-        if (selectedTopic === "cs") {
-            setGameState("playingcs");
-        } else if (selectedTopic === "pd") {
-            setGameState("playingpd");
-        } else if (selectedTopic === "ss") {
-            setGameState("playingss");
-        } else {
-            setGameState("playing");
-        }
-    };
-
     const handleSelectTopic = (event) => {
         setSelectedTopic(event.target.value);
+    };
+
+    const startQuiz = () => {
+        setGameState("playing");
     };
 
     return (
@@ -44,21 +33,22 @@ function Menu() {
                         style={{ paddingLeft: "15px" }}
                     />
                     <label className="qmenulabel">Choose a Topic :</label>
-                    <select onChange={handleSelectTopic}>
+                    <select onClick={handleSelectTopic}>
                         <option value="">General</option>
                         <option value="cs">Communication Skills</option>
                         <option value="pd">Personality Development</option>
                         <option value="ss">Soft Skills</option>
                     </select>
                     <br />
-                    <button className="qbutton" onClick={handleStartQuiz}>
+                    <button className="qbutton" onClick={startQuiz}>
                         Start Quiz
                     </button>
                 </div>
             </div>
+            { (
+                <Quiz selectedTopic={selectedTopic} />
+            )}
         </div>
     );
 }
-
-
 export default Menu;

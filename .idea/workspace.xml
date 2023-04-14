@@ -5,18 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="57379db4-6fd5-4158-8920-5d2dc0181ac1" name="Changes" comment="Soft Skills, Personality Development and Communication Skills Quizzes added">
-      <change afterPath="$PROJECT_DIR$/src/compCSquiz/CSEndScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compCSquiz/CSQuiz.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compCSquiz/CSSolutions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compPDquiz/PDEndScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compPDquiz/PDQuiz.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compPDquiz/PDSolutions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compSSquiz/SSEndScreen.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compSSquiz/SSQuiz.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/compSSquiz/SSSolutions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helperQuiz/CSQuestions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helperQuiz/PDQuestions.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/helperQuiz/SSQuestions.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/QApp.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/QApp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componentsQuiz/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentsQuiz/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/componentsQuiz/Quiz.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/componentsQuiz/Quiz.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,24 +36,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "app.teamhub.trackedBranches": "1n3uc7b/master",
-    "codeWithMe.voiceChat.enabledByDefault": "false",
-    "last_opened_file_path": "C:/Users/Hp/WebstormProjects/C-CSPD_FrontEnd",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "gitlive.settings",
-    "ts.external.directory.path": "D:\\Applications\\WebStorm 2022.2.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;app.teamhub.trackedBranches&quot;: &quot;1n3uc7b/master&quot;,
+    &quot;codeWithMe.voiceChat.enabledByDefault&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/Hp/WebstormProjects/C-CSPD_FrontEnd&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;gitlive.settings&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;D:\\Applications\\WebStorm 2022.2.1\\plugins\\JavaScriptLanguage\\jsLanguageServicesImpl\\external&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="ReactDesignerToolWindowState">
     <option name="myId2Visible">
       <map>
@@ -149,7 +141,7 @@
       <workItem from="1680950048936" duration="4533000" />
       <workItem from="1680980077379" duration="16530000" />
       <workItem from="1681076640945" duration="4856000" />
-      <workItem from="1681374597992" duration="62141000" />
+      <workItem from="1681374597992" duration="70583000" />
     </task>
     <task id="LOCAL-00001" summary="css changes">
       <created>1680191655743</created>
@@ -179,7 +171,14 @@
       <option name="project" value="LOCAL" />
       <updated>1681482412334</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Soft Skills, Personality Development and Communication Skills Quizzes added">
+      <created>1681482661786</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1681482661786</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
